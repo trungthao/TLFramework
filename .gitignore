@@ -1,0 +1,20 @@
+
+# Created by https://www.toptal.com/developers/gitignore/api/dotnetcore
+# Edit at https://www.toptal.com/developers/gitignore?templates=dotnetcore
+
+### DotnetCore ###
+# .NET Core build folders
+src/backend/TL.Api/bin/
+src/backend/TL.Api/obj/
+src/backend/TL.Domain/bin/
+src/backend/TL.Domain/obj/
+src/backend/TL.Repositories/bin/
+src/backend/TL.Repositories/obj/
+src/backend/TL.Services/bin/
+src/backend/TL.Services/obj/
+
+# Common node modules locations
+/node_modules
+/wwwroot/node_modules
+
+# End of https://www.toptal.com/developers/gitignore/api/dotnetcore
