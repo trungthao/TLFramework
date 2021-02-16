@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using TL.Domain.Constants;
 using TL.Domain.Entities;
 using TL.Domain.Repositories;
-using TL.Repositories.Constants;
 using TL.Domain.Services;
+using TL.Domain.Utilities;
 
 namespace TL.Repositories
 {

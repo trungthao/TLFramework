@@ -7,6 +7,8 @@ using System.Collections.Generic;
 using MySql.Data.MySqlClient;
 using Dapper;
 using System.Threading.Tasks;
+using TL.Domain.Constants;
+using TL.Domain.Services;
 
 namespace TL.Services
 {
@@ -17,14 +19,14 @@ namespace TL.Services
 
         public DatabaseService(IOptions<AppSettings> appSettings)
         {
-            _appSettings = appSettings;
+            _appSettings = appSettings.Value;
         }
 
         public string GetConnectionString()
         {
             if (string.IsNullOrWhiteSpace(_connectionString))
             {
-                _connectionString = _configService.GetConnectionStrings();
+                _connectionString = _appSettings.ConnectionString;
             }
 
             return _connectionString;

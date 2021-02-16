@@ -16,6 +16,7 @@ namespace TL.Api.Controllers
             _testService = service;
         }
 
+        [HttpPost("")]
         public async Task<IActionResult> SaveEntity(SaveTestRequest saveTestRequest)
         {
             var testEntity = _mapper.Map<Test>(saveTestRequest);

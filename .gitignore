@@ -18,3 +18,6 @@ src/backend/TL.Services/obj/
 /wwwroot/node_modules
 
 # End of https://www.toptal.com/developers/gitignore/api/dotnetcore
+src/backend/.vs/TL.Framework/config/applicationhost.config
+src/backend/.vs/TL.Framework/DesignTimeBuild/.dtbcache.v2
+src/backend/.vs/TL.Framework/v16/.suo
